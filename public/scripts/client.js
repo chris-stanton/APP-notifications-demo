@@ -2,57 +2,33 @@
 console.log("client.js sourced!");
 
 var waypoint = new Waypoint({
-  element: document.getElementById('waypoint-one'),
+  element: document.getElementById('waypoint-alertifyDotJS'),
   handler: function(direction) {
-    alertify.log("Log Alert");
-  },
-  // offset: 400
-});
-
-var waypoint = new Waypoint({
-  element: document.getElementById('waypoint-two'),
-  handler: function(direction) {
-    alertify.success("Success Alert");
+    alertify.log("Alertify.js");
   },
   offset: 200
 });
 
 var waypoint = new Waypoint({
-  element: document.getElementById('waypoint-three'),
+  element: document.getElementById('waypoint-alertifyJS'),
   handler: function(direction) {
-    alertify.error("Error Alert");
+    alertify.log("Alertify JS");
   },
   offset: 200
 });
 
 var waypoint = new Waypoint({
-  element: document.getElementById('section-three'),
+  element: document.getElementById('waypoint-sweetAlert2'),
   handler: function(direction) {
-    alertify
-    .closeLogOnClick(false)
-    .log("<div>" +
-            "<input id='input' type='text'>" +
-            "<button type='button' onclick='inputButton()'> Submit </button>" +
-          "</div>");
+    alertify.log("SweetAlert 2");
   },
-  offset: 250
+  offset: 200
 });
 
-// button click listener
-function inputButton (){
-  var inputValue = document.getElementById('input').value;
-  console.log(inputValue);
-};
-
 var waypoint = new Waypoint({
-  element: document.getElementById('section-four'),
+  element: document.getElementById('waypoint-four'),
   handler: function(direction) {
-    // alertify is need
-    alertify
-    .closeLogOnClick(true)
-    .log("<a href='#section-one'>" +
-            "<div> Top <img src='../public/assets/images/arrow-up.ico'></div>" +
-          "</a>")
+    alertify.log("Swaypoint four");
   },
-  offset: 400
+  offset: 200
 });

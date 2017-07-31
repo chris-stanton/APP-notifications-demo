@@ -8,8 +8,8 @@
       <!-- alertify.js -->
       <link rel="stylesheet" href="../public/styles/alertify.css">
       <!-- alertify JS -->
-      <link rel="stylesheet" href="{PATH}/alertify.min.css">
-      <link rel="stylesheet" href="{PATH}/themes/default.min.css">
+      <link rel="stylesheet" href="../public/styles/alertify.min.css">
+      <link rel="stylesheet" href="../public/styles/default.min.css">
       <!-- stylesheet -->
       <link rel="stylesheet" href="../public/styles/styles.css">
         <title> Notifications Demo </title>
@@ -21,13 +21,9 @@
 
     <main class="main-container">
 
-    <section id="waypoint-one" class="waypoint-container waypoint-one">
-
-    </section>
-
-      <section id="section-one" class="section-container section-one">
-        <h1> Section One </h1>
-        <p>
+      <section id="section-landing" class="landing-container section-landing">
+        <h1> Notifications Demo </h1>
+        <div>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
           illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
@@ -40,16 +36,14 @@
           Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
           illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
           nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
-        </p>
+        </div>
       </section>
 
-    <section id="waypoint-two" class="waypoint-container waypoint-two">
+    <section id="waypoint-alertifyDotJS" class="waypoint-container waypoint-alertifyDotJS"></section>
 
-    </section>
-
-      <section id="section-two" class="section-container section-two">
-        <h1> Section Two </h1>
-        <p>
+      <section id="section-alertifyDotJS" class="section-container section-alertifyDotJS">
+        <h1> Alertify.js </h1>
+        <div>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
           illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
@@ -62,16 +56,14 @@
           Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
           illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
           nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
-        </p>
+        </div>
       </section>
 
-    <section id="waypoint-three" class="waypoint-container waypoint-three">
+    <section id="waypoint-alertifyJS" class="waypoint-container waypoint-alertifyJS"></section>
 
-    </section>
-
-      <section id="section-three" class="section-container section-three">
-        <h1> Section Three </h1>
-        <p>
+      <section id="section-alertifyJS" class="section-container section-alertifyJS">
+        <h1> Alertify JS </h1>
+        <div>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
           illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
@@ -84,16 +76,34 @@
           Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
           illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
           nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
-        </p>
+        </div>
       </section>
 
-    <section id="waypoint-four" class="waypoint-container waypoint-four">
+    <section id="waypoint-sweetAlert2" class="waypoint-container waypoint-sweetAlert2"></section>
 
-    </section>
+      <section id="section-sweetAlert2" class="section-container section-sweetAlert2">
+        <h1> SweetAlert 2 </h1>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
+          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
+          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
+          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
+          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
+          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
+          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
+        </div>
+      </section>
+
+    <section id="waypoint-four" class="waypoint-container waypoint-four"></section>
 
       <section id="section-four" class="section-container section-four">
         <h1> Section Three </h1>
-        <p>
+        <div>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
           illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
@@ -106,7 +116,7 @@
           Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
           illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
           nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
-        </p>
+        </div>
       </section>
     </main>
     <footer> Copyright (C) Chris Stanton 2017. All Rights Reserved </footer>
@@ -114,12 +124,11 @@
   </body>
 <!-- scripts are below the body because the HTML needs to render before the javascript runs.
 Console will log "handler undefined otherwise"   -->
-
   <!-- alertify.js -->
   <script type="text/javascript" src="../public/assets/vendors/alertify.js"></script>
   <script type="text/javascript" src="../public/assets/vendors/noframework.waypoints.min.js"></script>
   <!-- alertify JS -->
-  <script src="{PATH}/alertify.min.js"></script>
+  <script src="../public/assets/vendors/alertify.min.js"></script>
   <!-- Javascript -->
   <script type="text/javascript" src="../public/scripts/client.js"></script>
 </html>
