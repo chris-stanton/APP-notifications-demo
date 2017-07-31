@@ -24,11 +24,3 @@ var waypoint = new Waypoint({
   },
   offset: 200
 });
-
-var waypoint = new Waypoint({
-  element: document.getElementById('waypoint-four'),
-  handler: function(direction) {
-    alertify.log("Swaypoint four");
-  },
-  offset: 200
-});

@@ -2,7 +2,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   text-align: center;
   color: #000000;
 
@@ -10,7 +10,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 header {
@@ -40,9 +40,20 @@ header {
 
 .landing-container {
   flex-direction: row;
-  margin: 50px 60px 50px 60px;
+  margin: 50px 40px 50px 40px;
   padding: 30px;
   height: 400px;
+}
+
+.landing-container .landing-description {
+  font-size: 14px;
+  margin: 20px auto;
+}
+
+.landing-container .links-image {
+  height: 45px;
+  width: 125px;
+  margin: 20px;
 }
 
 .section-container {
@@ -58,10 +69,6 @@ header {
   height: 500px;
 }
 
-img {
-  width: 25px;
-}
-
 .waypoint-alertifyDotJS {
   background-image: url('../assets/images/alertifyDotJS.png');
 }
@@ -72,10 +79,6 @@ img {
 
 .waypoint-sweetAlert2 {
   background-image: url('../assets/images/sweetAlert2.png');
-}
-
-.waypoint-four {
-  background-image: url('../assets/images/alertifyDotJS.png');
 }
 
 footer {
@@ -95,4 +98,25 @@ footer {
   font-size: 15px;
   color: #ffffff;
   padding: 5px;
+}
+
+
+
+
+
+@media(max-width:568px) {
+
+  .landing-container {
+    flex-direction: row;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    height: 500px;
+  }
+
+  .section-container {
+    flex-direction: row;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+  }
+
 }
