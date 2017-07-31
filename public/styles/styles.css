@@ -53,6 +53,7 @@ header {
   height: 45px;
   width: 125px;
   margin: 20px;
+  border-radius: 7px;
 }
 
 .section-container {
@@ -62,9 +63,10 @@ header {
 }
 
 .section-container-image {
-  height: 45px;
-  width: 125px;
+  height: 75px;
+  width: 175px;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .waypoint-container {
