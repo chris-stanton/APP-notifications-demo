@@ -5,9 +5,9 @@ console.log("client.js sourced!");
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint-alertifyDotJS'),
   handler: function(direction) {
-    alertify.log("Alertify.js");
+    alertify.log("alertify.js");
   },
-  offset: 200
+  offset: 100
 });
 
 var waypoint = new Waypoint({
@@ -15,7 +15,7 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     alertify.log("Alertify JS");
   },
-  offset: 200
+  offset: 100
 });
 
 var waypoint = new Waypoint({
@@ -23,7 +23,7 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     alertify.log("Notyf");
   },
-  offset: 200
+  offset: 100
 });
 
 var waypoint = new Waypoint({
@@ -31,5 +31,5 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     alertify.log("SweetAlert 2");
   },
-  offset: 200
+  offset: 100
 });
