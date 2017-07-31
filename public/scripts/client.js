@@ -1,6 +1,7 @@
 
 console.log("client.js sourced!");
 
+// Waypoints.js event triggers
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint-alertifyDotJS'),
   handler: function(direction) {
@@ -13,6 +14,14 @@ var waypoint = new Waypoint({
   element: document.getElementById('waypoint-alertifyJS'),
   handler: function(direction) {
     alertify.log("Alertify JS");
+  },
+  offset: 200
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('waypoint-notyf'),
+  handler: function(direction) {
+    alertify.log("Notyf");
   },
   offset: 200
 });
