@@ -151,4 +151,102 @@ var waypoint = new Waypoint({
   function sweetAlert2Alerts() {
     var sweetAlert2Alerts = document.getElementById('sweetAlert2-alerts').value;
     console.log(sweetAlert2Alerts);
+    if (sweetAlert2Alerts === 'basic'){
+      swal('Basic Alert');
+    } else if (sweetAlert2Alerts === 'success'){
+      swal(
+          'Success',
+          'You clicked the button!',
+          'success'
+          )
+    } else if (sweetAlert2Alerts === 'error'){
+      swal(
+          'Error',
+          'Your imaginary file has been deleted.',
+          'error'
+        )
+    } else if (sweetAlert2Alerts === 'warning'){
+      swal(
+          'Warning',
+          'Your imaginary file has been deleted.',
+          'warning'
+        )
+    } else if (sweetAlert2Alerts === 'info'){
+      swal(
+          'Info',
+          'Your imaginary file has been deleted.',
+          'info'
+        )
+    } else if (sweetAlert2Alerts === 'question'){
+      swal(
+          'Question',
+          'Your imaginary file has been deleted.',
+          'question'
+        )
+    } else if (sweetAlert2Alerts === 'timerClose'){
+      swal({
+          title: 'Auto close alert!',
+          text: 'I will close in 2 seconds.',
+          timer: 2000
+        }).then(
+          function() {},
+          // handling the promise rejection
+          function(dismiss) {
+            if (dismiss === 'timer') {
+              console.log('I was closed by the timer')
+            }// end if
+          }// end function
+        )// end .then
+    } else if (sweetAlert2Alerts === 'warning2'){
+      swal({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+      }).then(function() {
+      swal(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      })
+    } else if (sweetAlert2Alerts === 'chaining'){
+      swal.setDefaults({
+          input: 'text',
+          confirmButtonText: 'Next &rarr;',
+          showCancelButton: true,
+          animation: false,
+          progressSteps: ['1', '2', '3']
+      })
+      var steps = [
+        {
+          title: 'Question 1',
+          text: 'Chaining swal2 modals is easy'
+        },
+          'Question 2',
+          'Question 3'
+      ]
+      swal.queue(steps).then(function (result) {
+        swal.resetDefaults()
+        swal({
+          title: 'All done!',
+          html:
+            'Your answers: <pre>' +
+              JSON.stringify(result) +
+            '</pre>',
+          confirmButtonText: 'Lovely!',
+          showCancelButton: false
+        })
+      }, function () {
+        swal.resetDefaults()
+      })
+    } else {
+      swal('make a selection');
+      return
+    };// end if else
+
+
   };// end sweetAlert2Alerts()

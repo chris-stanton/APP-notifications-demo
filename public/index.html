@@ -12,6 +12,8 @@
       <link rel="stylesheet" href="../public/styles/default.min.css">
       <!-- notyf -->
       <link rel="stylesheet" href="../public/styles/notyf.min.css">
+      <!-- sweetalert 2 -->
+      <link rel="stylesheet" href="../public/styles/sweetalert2.min.css">
       <!-- stylesheet -->
       <link rel="stylesheet" href="../public/styles/styles.css">
         <title> Notifications Demo </title>
@@ -127,8 +129,15 @@
         <div>
           <h2> Alerts </h2>
           <select id="sweetAlert2-alerts">
+            <option value="basic"> Basic Alert </option>
             <option value="success"> Success </option>
             <option value="error"> Error </option>
+            <option value="warning"> Warning </option>
+            <option value="info"> Info </option>
+            <option value="question"> Question </option>
+            <option value="timerClose"> Timer Close </option>
+            <option value="warning2"> Warning 2 </option>
+            <option value="chaining"> Chaining </option>
           </select>
           <button type="button" onclick="sweetAlert2Alerts()"> Try! </button>
         </div>
@@ -148,6 +157,8 @@ Console will log "handler undefined otherwise"   -->
   <script src="../public/assets/vendors/alertify.min.js"></script>
   <!-- notyf -->
   <script src="../public/assets/vendors/notyf.min.js"></script>
+  <!-- sweetaler 2 -->
+  <script src="../public/assets/vendors/sweetalert2.min.js"></script>
   <!-- Javascript -->
   <script type="text/javascript" src="../public/scripts/client.js"></script>
 </html>
