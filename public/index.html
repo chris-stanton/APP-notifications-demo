@@ -10,6 +10,8 @@
       <!-- alertify JS -->
       <link rel="stylesheet" href="../public/styles/alertify.min.css">
       <link rel="stylesheet" href="../public/styles/default.min.css">
+      <!-- notyf -->
+      <link rel="stylesheet" href="../public/styles/notyf.min.css">
       <!-- stylesheet -->
       <link rel="stylesheet" href="../public/styles/styles.css">
         <title> Notifications Demo </title>
@@ -77,18 +79,22 @@
           </a>
         </h1>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
-          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
-          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
-          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
-          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
-          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
-          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
+          <h2> Logs </h2>
+          <select id="alertifyJS-logs">
+            <option value="log"> Log </option>
+            <option value="success"> Success </option>
+            <option value="error"> Error </option>
+          </select>
+          <button type="button" onclick="alertifyJSAlertLogs()"> Try! </button>
+        </div>
+        <div>
+          <h2> Alerts </h2>
+          <select id="alertifyJS-alerts">
+            <option value="dialog"> Dialog </option>
+            <option value="confirm"> Confirm Dialog </option>
+            <option value="prompt"> Prompt Dialog </option>
+          </select>
+          <button type="button"onclick="alertifyJSAlerts()"> Try! </button>
         </div>
       </section>
 
@@ -101,18 +107,12 @@
           </a>
         </h1>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
-          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
-          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
-          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
-          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Veritatis nobis quibusdam ratione repellendus laudantium blanditiis repellat molestias,
-          illo nulla fugit, quas quisquam pariatur rerum consequatur odit provident! Nam libero,
-          nostrum quis excepturi nesciunt rerum tempora fugiat, dicta est in, error.
+          <h2> Logs </h2>
+          <select id="notyf-logs">
+            <option value="success"> Success </option>
+            <option value="error"> Error </option>
+          </select>
+          <button type="button" onclick="notyfLogs()"> Try! </button>
         </div>
       </section>
 
@@ -152,6 +152,8 @@ Console will log "handler undefined otherwise"   -->
   <script type="text/javascript" src="../public/assets/vendors/noframework.waypoints.min.js"></script>
   <!-- alertify JS -->
   <script src="../public/assets/vendors/alertify.min.js"></script>
+  <!-- notyf -->
+  <script src="../public/assets/vendors/notyf.min.js"></script>
   <!-- Javascript -->
   <script type="text/javascript" src="../public/scripts/client.js"></script>
 </html>

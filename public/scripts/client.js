@@ -1,6 +1,10 @@
 
 console.log("client.js sourced!");
 
+
+/////////////////////////////////////
+///          alertify.js          ///
+/////////////////////////////////////
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint-alertifyDotJS'),
   handler: function(direction) {
@@ -38,6 +42,7 @@ var waypoint = new Waypoint({
 
   function alertifyDotJSAlerts() {
     var alertsOption = document.getElementById('alertifyDotJS-alerts').value;
+    console.log(alertsOption);
     if (alertsOption === 'dialog'){
       alertify.alert("Dialog Alert");
     } else if (alertsOption === 'confirm'){
@@ -78,10 +83,9 @@ var waypoint = new Waypoint({
 
 
 
-
-
-
-
+/////////////////////////////////////
+///          Alertify JS          ///
+/////////////////////////////////////
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint-alertifyJS'),
   handler: function(direction) {
@@ -89,6 +93,26 @@ var waypoint = new Waypoint({
   },
   offset: 100
 });
+
+  function alertifyJSAlertLogs() {
+    var alertifyJSLogs = document.getElementById('alertifyJS-logs').value;
+    console.log(alertifyJSLogs);
+  };// end alertifyJSAlertLogs()
+
+  function alertifyJSAlerts() {
+    var alertifyJSAlerts = document.getElementById('alertifyJS-alerts').value;
+    console.log(alertifyJSAlerts);
+  };// end alertifyJSAlertLogs()
+
+
+
+
+
+/////////////////////////////////////
+///             Notyf             ///
+/////////////////////////////////////
+// Creates an instance for Notyf
+var notyf = new Notyf();
 
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint-notyf'),
@@ -98,6 +122,24 @@ var waypoint = new Waypoint({
   offset: 100
 });
 
+  function notyfLogs() {
+    var notyfLogs = document.getElementById('notyf-logs').value;
+    console.log(notyfLogs);
+    if (notyfLogs === 'success') {
+      notyf.confirm('Your changes have been successfully saved!');
+    } else if (notyfLogs === 'error'){
+      notyf.alert('You must fill out the form before moving forward');
+    } else {
+      alert("make a selection");
+      return
+    }
+  };// end notyfLogs()
+
+
+
+/////////////////////////////////////
+///          SweetAlert 2         ///
+/////////////////////////////////////
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint-sweetAlert2'),
   handler: function(direction) {
