@@ -1,19 +1,42 @@
 
 console.log("client.js sourced!");
 
-// Waypoints.js event triggers
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint-alertifyDotJS'),
   handler: function(direction) {
-    alertify.log("alertify.js");
+    alertify.log("alertify.js: Standard log message");
   },
   offset: 100
 });
 
+function logAlerts() {
+  var logOption = document.getElementById('alertifyDotJS-logs').value;
+  console.log(logOption);
+  if (logOption === 'log'){
+    alertify.log("alertify.js: Standard log message");
+  } else if(logOption === 'success') {
+    alertify.success("alertify.js: Standard success message");
+  } else if(logOption === 'error') {
+    alertify.error("alertify.js: Standard errormessage");
+  } else {
+    alert('make a selection');
+    return
+  }
+};// end logAlerts()
+
+
+
+
+
+
+
+
+
+
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint-alertifyJS'),
   handler: function(direction) {
-    alertify.log("Alertify JS");
+    alertify.success("Alertify JS: Normal message");
   },
   offset: 100
 });

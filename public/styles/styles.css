@@ -39,13 +39,15 @@ header {
 
 .landing-container {
   flex-direction: row;
-  margin: 50px 40px 50px 40px;
-  padding: 30px;
+  background-color: #000000;
+  color: #ffffff;
+  /*margin: 50px 40px 50px 40px;*/
+  padding: 75px;
   height: 400px;
 }
 
 .landing-container .landing-description {
-  font-size: 14px;
+  font-size: 20px;
   margin: 20px auto;
 }
 
@@ -58,8 +60,9 @@ header {
 
 .section-container {
   flex-direction: row;
-  margin: 40px 60px 40px 60px;
-  padding: 30px;
+  padding: 75px;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .section-container-image {
@@ -119,15 +122,27 @@ footer {
 
   .landing-container {
     flex-direction: row;
-    margin: 20px 20px 20px 20px;
-    padding: 20px;
-    height: 520px;
+    padding: 50px;
+    height: 720px;
+  }
+
+  .landing-container .landing-description {
+    font-size: 18px;
+    padding: 0px 0px 50px 0px;
+  }
+
+  .landing-container .links-image {
+    height: 100px;
+    width: 300px;
+    margin: 2px;
+    border-radius: 5px;
   }
 
   .section-container {
     flex-direction: row;
-    margin: 20px 20px 20px 20px;
-    padding: 20px;
+    padding: 50px;
   }
+
+
 
 }
