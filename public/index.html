@@ -45,13 +45,26 @@
           </a>
         </h1>
         <div>
-          <h5> Logs </h5>
+          <h2> Logs </h2>
           <select id="alertifyDotJS-logs">
             <option value="log"> Log </option>
             <option value="success"> Success </option>
             <option value="error"> Error </option>
+            <option value="promise-aware"> Promise Aware </option>
+            <option value="click-close"> Closing Log On Click </option>
+            <option value="click-disabled"> Disable Log On Click </option>
+            <option value="hide"> Hide in 10 seconds </option>
           </select>
-          <button type="button" onclick="logAlerts()"> Try! </button>
+          <button type="button" onclick="alertifyDotJSAlertLogs()"> Try! </button>
+        </div>
+        <div>
+          <h2> Alerts </h2>
+          <select id="alertifyDotJS-alerts">
+            <option value="dialog"> Dialog </option>
+            <option value="confirm"> Confirm Dialog </option>
+            <option value="prompt"> Prompt Dialog </option>
+          </select>
+          <button type="button"onclick="alertifyDotJSAlerts()"> Try! </button>
         </div>
       </section>
 
