@@ -18,7 +18,7 @@ select {
   font-size: 15px;
 }
 
-button {
+.try-button {
   height: 30px;
   width: 50px;
   border-radius: 5px;
@@ -27,7 +27,7 @@ button {
   outline: none;
 }
 
-button:hover {
+.try-button:hover {
   background-color: #1b5ed1;
   color: #ffffff;
 }
