@@ -107,7 +107,6 @@ var waypoint = new Waypoint({
 
 
 
-
 /////////////////////////////////////
 ///             Notyf             ///
 /////////////////////////////////////
@@ -137,6 +136,7 @@ var waypoint = new Waypoint({
 
 
 
+
 /////////////////////////////////////
 ///          SweetAlert 2         ///
 /////////////////////////////////////
@@ -147,3 +147,8 @@ var waypoint = new Waypoint({
   },
   offset: 100
 });
+
+  function sweetAlert2Alerts() {
+    var sweetAlert2Alerts = document.getElementById('sweetAlert2-alerts').value;
+    console.log(sweetAlert2Alerts);
+  };// end sweetAlert2Alerts()
